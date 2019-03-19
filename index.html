@@ -5,22 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <button class="btn">Добавить</button>
-      <button class="btn">Обновить</button>
-      <label>
-        <input type="text" class="search" placeholder="Событие, дата или участник">
-      </label>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="btn-wrap">
+          <button class="btn">Добавить</button>
+          <button class="btn">Обновить</button>
+        </div>
 
-  <main class="main">
-    <div class="container">
+        <form action="#" class="search-form" method="post">
+          <button type="submit" class="btn-form-submit"></button>
+          <label class="label-search">
+            <input type="text" class="search" placeholder="Событие, дата или участник">
+          </label>
+        </form>
+
+      </div>
+    </header>
+
+    <main class="main">
+
       <div class="calendar-info">
         <button class="btn">left</button>
         <span class="info">Март 2019</span>
@@ -79,8 +88,8 @@
 
       </table>
 
-    </div>
-  </main>
+    </main>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px; 
+
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background-color: #f4f4f4;
+  min-height: 100px;
+  padding-top: 50px;
+}
+
+.btn {
+  font-size: inherit;
+  background-color: #006fca;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.search {
+  width: 250px;
+  height: 25px;
+  font-size: inherit;
+  border-radius: 3px;
+  box-shadow: 1px solid #f4f4f4;
+  padding-left: 10px;
+}
+
+.btn-form-submit {
+  border: none;
+  width: 15px;
+  height: 15px;
+  background: url(./img/search-logo.svg) no-repeat center;
+
+  padding-right: 20px;
+}
